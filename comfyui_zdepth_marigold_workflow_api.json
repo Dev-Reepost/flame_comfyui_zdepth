@@ -1,0 +1,57 @@
+{
+  "2": {
+    "inputs": {
+      "seed": 259249863114226,
+      "denoise_steps": 10,
+      "n_repeat": 10,
+      "regularizer_strength": 0.1,
+      "reduction_method": "median",
+      "max_iter": 5,
+      "tol": 0.001,
+      "invert": true,
+      "keep_model_loaded": true,
+      "n_repeat_batch_size": 2,
+      "use_fp16": false,
+      "scheduler": "DDIMScheduler",
+      "normalize": true,
+      "image": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MarigoldDepthEstimation",
+    "_meta": {
+      "title": "MarigoldDepthEstimation"
+    }
+  },
+  "4": {
+    "inputs": {
+      "filename_prefix": "Result",
+      "sRGB_to_linear": true,
+      "version": 0,
+      "start_frame": 1,
+      "frame_pad": 4,
+      "images": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "SaveEXR",
+    "_meta": {
+      "title": "Save EXR"
+    }
+  },
+  "5": {
+    "inputs": {
+      "filepath": "Front",
+      "linear_to_sRGB": true,
+      "image_load_cap": 0,
+      "skip_first_images": 0,
+      "select_every_nth": 1
+    },
+    "class_type": "LoadEXR",
+    "_meta": {
+      "title": "Load EXR"
+    }
+  }
+}
