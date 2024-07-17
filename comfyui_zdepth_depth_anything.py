@@ -115,7 +115,6 @@ class ComfyuiZDDA(pybox_comfyui.ComfyUIBaseClass):
             )
         self.add_global_elements(models_list)
         
-        
         col = 2
         # ComfyUI workflow actions
         self.ui_version_row = 0

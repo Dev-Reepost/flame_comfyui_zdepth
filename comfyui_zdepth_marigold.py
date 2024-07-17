@@ -57,6 +57,7 @@ class ComfyuiZDMG(pybox_comfyui.ComfyUIBaseClass):
     
     version = 1
     
+    workflow_marigold_depth_estimation_idx = -1
     workflow_denoise_steps_idx = -1
     workflow_nrepeat_idx = -1
     workflow_regularizer_strength_idx = -1
